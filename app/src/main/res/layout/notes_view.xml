@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:longClickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    style="@style/Widget.Material3.CardView.Elevated"
+    app:strokeWidth="0.2dp"
+    app:strokeColor="#00060C"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="#191D20"
+    android:layout_margin="10dp"
+    android:focusable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_toStartOf="@id/delButton"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:text = "@string/click_to_add_note"
+                android:textSize="23sp"
+                android:layout_margin="7dp"
+                android:padding="4dp"
+                android:fontFamily="sans-serif-black"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text = "Rishi"
+                android:layout_toStartOf="@id/delButton"
+                android:layout_below="@id/title"
+                android:layout_marginTop="55dp"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"/>
+
+            <ImageView
+                android:id="@+id/delButton"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/title"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#123456"
+                android:contentDescription="@string/delete" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>

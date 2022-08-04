@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#020910"
+    tools:context=".NoteActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/noteTitle"
+        style="@style/Widget.Social.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:helperTextTextColor="@color/white"
+        app:counterTextColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/note_title"
+        app:helperTextTextAppearance="@style/TextAppearance.Material3.TitleMedium"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text = "Rishi"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:gravity="top"
+            android:inputType="text|textLongMessage" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/noteDescription"
+        style="@style/Widget.Social.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/white"
+        android:gravity="top"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:hint="@string/note_description"
+        app:helperTextTextAppearance="@style/TextAppearance.Material3.BodyMedium"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="This is Okay"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/postNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#25252E"
+        android:text="@string/update"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</LinearLayout>
